@@ -58,7 +58,7 @@ print('la clef privée est :', private_key ())
 
 s = list(input("donnez une phrase à crypter"))
 
-t1 = time.clock()
+t1 = time.time()
 
 def string_en_chiffre(s):
     ld=[]
@@ -83,9 +83,9 @@ def chiffrement (ld, e ,n) :
 
 print('le message crypté est :' , chiffrement(ld, e, n))
 
-t2 = time.clock()
+t2 = time.time()
 
-print("temps d'éxécution pour le cryptage (de la phrase seulement)", t2 - t1)
+print("temps d'éxécution pour le cryptage", t2 - t1)
 
 
 
